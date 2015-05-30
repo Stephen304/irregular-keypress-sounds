@@ -1,7 +1,7 @@
 {
   "name": "irregular-keypress-sounds",
   "main": "irregular.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Make Atom editor sound computers in 'The Irregular at Magic High School'",
   "repository": "https://github.com/Stephen304/irregular-keypress-sounds",
   "license": "MIT",
