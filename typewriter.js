@@ -5,21 +5,14 @@ function handleKeyDown(event) {
 	if (!pressed[event.keyCode]) {
 		pressed[event.keyCode] = true;
 
-		var key_down = new Audio(path.join(__dirname, "audio/key_down.mp3"));
+		var randSound = "audio/key" + Math.ceil(Math.random()*36) + ".mp3";
+		var key_down = new Audio(path.join(__dirname, randSound));
 		key_down.play();
-
-		if (event.keyCode === 13) {
-			var key_down = new Audio(path.join(__dirname, "audio/return.mp3"));
-			key_down.play();
-		}
 	}
 }
 
 function handleKeyUp(event) {
 		pressed[event.keyCode] = false;
-
-		var key_up = new Audio(path.join(__dirname, "audio/key_up.mp3"));
-		key_up.play();
 }
 
 module.exports = {
